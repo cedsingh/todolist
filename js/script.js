@@ -22,11 +22,12 @@ function addItem(title, isComplete) {
 function editTask(element) {
 	$('body').find('.updateForm').remove();
 	var title = $(element).parents('li').find('.task-left').text();
-	var item = `<div class="updateForm">
+	var item = `<div class="break"></div>
+				<div class="updateForm">
 				<input id="updateTitle" type="text" value="${title}">
 				<button onclick="updateTask(this)">Update</button>
 				</div>`;
-	$(element).parent().append(item);
+	$(element).parents('li').append(item);
 }
 
 function updateTask(element){

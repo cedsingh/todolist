@@ -27,8 +27,17 @@ section {
 }
 .task {
 	display: flex;
-	flex: 1 1;
+	flex-wrap: wrap; 
 	padding: 5px;
 	border-bottom: 1px solid #ddd;
 	justify-content: space-between;
+}
+.break {
+	flex-basis: 100%;
+	height: 0;
+}
+.updateForm {
+	text-align: center;
+	padding: 10px 5px;
+	width: 100%;
 }
