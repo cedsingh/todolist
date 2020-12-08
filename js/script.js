@@ -43,10 +43,10 @@ function changeStatus(element) {
 	$('body').find('.updateForm').remove();
 	let title = $(element).parents(".task").find('.task-left').text();
 	if($(element).is(':checked')) {
-		completedList.append(addItem(title, true));
+		completedList.prepend(addItem(title, true));
 	}
 	else {
-		todoList.append(addItem(title, false));
+		todoList.prepend(addItem(title, false));
 	}
 	deleteTask(element);
 }

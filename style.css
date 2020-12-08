@@ -7,6 +7,7 @@ section {
 }
 .header {
 	text-align: center;
+	padding: 15px;
 }
 .wrapper {
 	position: absolute;
@@ -14,9 +15,12 @@ section {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 300px;
+	border: 1px dashed #ddd;
+	padding: 5px;
 }
 .addTask {
 	text-align: center;
+	padding: 15px;
 }
 .center {
 	text-align: center;
@@ -24,6 +28,7 @@ section {
 .completed-list, .todo-list {
 	list-style-type: none;
 	padding: 10px 5px;
+	border: 1px solid #ddd;
 }
 .task {
 	display: flex;
