@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="wrapper">
+	<header class="header">
+		<h1>Todo List</h1>
+	</header>
+	<main class="addTask">
+		<form>
+			<input type="text" name="title">
+			<input type="submit" name="add" value="Add">
+		</form>
+	</main>
+	<section id="todoTask">
+		<h2>Todo Task</h2>
+		<div class="todo-task">
+			<ul class="todo-list"></ul>
+		</div>
+	</section>
+	<section id="completedTask">
+		<h2>Completed Task</h2>
+		<div class="completed-task">
+			<ul class="completed-list"></ul>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
